@@ -1,0 +1,16 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:ws_work/src/core/usecases/i_usecase.dart';
+import 'package:ws_work/src/features/car/domain/repositories/i_car_repository.dart';
+
+class Logout implements IUsecase<bool> {
+  ICarRepository repository;
+
+  Logout({
+    required this.repository,
+  });
+
+  @override
+  Future<bool?> call({Map<String, dynamic>? map}) async {
+    return await repository.logout() ?? false;
+  }
+}

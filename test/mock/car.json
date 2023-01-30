@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "marca_id": 1,
+    "marca_nome": "TOYOTA",
+    "nome_modelo": "COROLLA XEI",
+    "ano": 2016,
+    "combustivel": "flex",
+    "num_portas": 4,
+    "valor_fipe": 70,
+    "cor": "Azul",
+    "timestamp_cadastro": 1636636150
+}
