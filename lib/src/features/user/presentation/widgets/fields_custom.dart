@@ -53,7 +53,7 @@ class TextFieldCustom extends StatelessWidget {
         hintText: text,
         hintStyle: GoogleFonts.jua(
           color: Colors.black,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w400,
         ),
         border: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),

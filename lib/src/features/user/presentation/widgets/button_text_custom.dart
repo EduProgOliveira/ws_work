@@ -27,7 +27,7 @@ class ButtonTextCustom extends StatelessWidget {
           'Entrar',
           style: GoogleFonts.jua(
             color: Colors.white,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w400,
           ),
         ),
       ),

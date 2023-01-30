@@ -61,11 +61,9 @@ class DB {
 
   Future? logout() async {
     var db = await database;
-    var result = await db.delete('user');
-    if (result > 0) {
-      result = await db.delete('car');
-    }
-    return result > 0;
+    await db.delete('user');
+    await db.delete('car');
+    return true;
   }
 
   String get _user => '''

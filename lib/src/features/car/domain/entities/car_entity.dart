@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class CarEntity extends Equatable {
   final int id;
@@ -110,5 +111,9 @@ class CarEntity extends Equatable {
       default:
         return 'Flex';
     }
+  }
+
+  formatPrice() {
+    return NumberFormat('###,##0.##', 'pt_BR').format(fipePrice);
   }
 }
