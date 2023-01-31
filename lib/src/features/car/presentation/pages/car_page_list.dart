@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:ws_work/src/features/car/presentation/cubit/car_cubit.dart';
-import 'package:ws_work/src/features/car/presentation/widgets/car_body_custom.dart';
+import '../cubit/car_cubit.dart';
+import '../widgets/car_body_custom.dart';
 
 class CarPageList extends StatefulWidget {
   const CarPageList({super.key});

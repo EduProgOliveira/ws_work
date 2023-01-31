@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ws_work/src/features/car/presentation/cubit/car_cubit.dart';
-import 'package:ws_work/src/features/car/presentation/widgets/card_car.dart';
-import 'package:ws_work/src/features/user/presentation/user_router.dart';
+import '../cubit/car_cubit.dart';
+import 'card_car.dart';
+import '../../../user/presentation/user_router.dart';
 
 class CarBodyCustom extends StatefulWidget {
   const CarBodyCustom({super.key});

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ws_work/src/features/user/presentation/widgets/brand_custom.dart';
-import 'package:ws_work/src/features/user/presentation/widgets/button_text_custom.dart';
-import 'package:ws_work/src/features/user/presentation/widgets/fields_custom.dart';
+
+import 'brand_custom.dart';
+import 'button_text_custom.dart';
+import 'fields_custom.dart';
 
 class UserBodyCustom extends StatelessWidget {
   const UserBodyCustom({super.key});

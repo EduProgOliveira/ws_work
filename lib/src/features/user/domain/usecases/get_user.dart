@@ -1,6 +1,6 @@
-import 'package:ws_work/src/core/models/user_model.dart';
-import 'package:ws_work/src/core/usecases/i_usecase.dart';
-import 'package:ws_work/src/features/user/domain/repositories/i_user_repository.dart';
+import '../../../../core/models/user_model.dart';
+import '../../../../core/usecases/i_usecase.dart';
+import '../repositories/i_user_repository.dart';
 
 class GetUser implements IUsecase<UserModel> {
   late IUserRepository repository;

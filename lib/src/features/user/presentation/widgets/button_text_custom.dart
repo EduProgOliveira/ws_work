@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:ws_work/src/features/user/presentation/cubit/user_cubit.dart';
+import '../cubit/user_cubit.dart';
 
 class ButtonTextCustom extends StatelessWidget {
   const ButtonTextCustom({super.key});

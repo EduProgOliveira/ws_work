@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:ws_work/src/features/car/domain/entities/car_entity.dart';
+import '../../domain/entities/car_entity.dart';
 
 class CarModel extends CarEntity {
   const CarModel({

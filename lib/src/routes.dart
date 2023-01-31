@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
-import 'package:ws_work/src/features/car/presentation/car_router.dart';
-import 'package:ws_work/src/features/user/presentation/user_router.dart';
-import 'package:ws_work/src/splash/splash_router.dart';
+import 'features/car/presentation/car_router.dart';
+import 'features/user/presentation/user_router.dart';
+import 'splash/splash_router.dart';
 
 final routes = GoRouter(
   routes: [

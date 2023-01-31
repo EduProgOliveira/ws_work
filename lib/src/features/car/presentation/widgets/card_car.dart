@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ws_work/src/features/car/domain/entities/car_entity.dart';
-import 'package:ws_work/src/features/car/presentation/cubit/car_cubit.dart';
+import '../../domain/entities/car_entity.dart';
+import '../cubit/car_cubit.dart';
 
 class CardCar extends StatelessWidget {
   const CardCar({

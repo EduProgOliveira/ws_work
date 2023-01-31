@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:ws_work/src/features/car/presentation/car_router.dart';
-import 'package:ws_work/src/features/user/presentation/user_router.dart';
-import 'package:ws_work/src/splash/cubit/splash_cubit.dart';
-import 'package:ws_work/src/splash/cubit/splash_state.dart';
+import '../features/car/presentation/car_router.dart';
+import '../features/user/presentation/user_router.dart';
+import 'cubit/splash_cubit.dart';
+import 'cubit/splash_state.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});

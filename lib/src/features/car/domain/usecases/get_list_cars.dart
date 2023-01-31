@@ -1,6 +1,6 @@
-import 'package:ws_work/src/core/usecases/i_usecase.dart';
-import 'package:ws_work/src/features/car/domain/entities/car_entity.dart';
-import 'package:ws_work/src/features/car/domain/repositories/i_car_repository.dart';
+import '../../../../core/usecases/i_usecase.dart';
+import '../entities/car_entity.dart';
+import '../repositories/i_car_repository.dart';
 
 class GetListCars implements IUsecase<List<CarEntity>> {
   late ICarRepository repository;

@@ -64,7 +64,9 @@ class CarEntity extends Equatable {
       year:
           map['ano'].runtimeType == String ? int.parse(map['ano']) : map['ano'],
       fuel: map['combustivel'] as String,
-      doorNumber: map['num_portas'] as int,
+      doorNumber: map['num_portas'].runtimeType == String
+          ? int.parse(map['num_portas'])
+          : map['num_portas'] as int,
       fipePrice: map['valor_fipe'].runtimeType == String
           ? double.parse(map['valor_fipe'])
           : (map['valor_fipe'] as num).toDouble(),

@@ -1,5 +1,6 @@
-import 'package:sqflite/sqflite.dart';
+// ignore: depend_on_referenced_packages
 import 'package:path/path.dart';
+import 'package:sqflite/sqflite.dart';
 
 class DB {
   DB._();
@@ -34,6 +35,21 @@ class DB {
     } catch (e) {
       return null;
     }
+  }
+
+  Future? getAllCars() async {
+    try {
+      var db = await database;
+      var result = await db.query('car');
+      return result.asMap();
+    } catch (e) {
+      return null;
+    }
+  }
+
+  Future? deleteCars() async {
+    var db = await database;
+    await db.delete('car');
   }
 
   Future? saveUser({required Map<String, dynamic> map}) async {

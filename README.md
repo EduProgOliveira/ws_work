@@ -1,16 +1,20 @@
 # ws_work
 
-A new Flutter project.
+# Arquitetura:
+Foi utilizado [Clean-Architecture] para desenvolver da melhor prática, de maneira limpa e organizada, utilizando concerito do [SOLID]. Utilizando TDD para quase toda a funcionalidade do sistema.
 
-## Getting Started
+# Injeção de dependências
+Escolhido foi [Provider] pela sua simplicidade, performace e alto reconhecimento na comunidade. Com [Provider] fica
+mais simples e claro na hora de chamar as rotas e chamar as dependências nescessarias para cada rota lembrando bem o [Modular].
 
-This project is a starting point for a Flutter application.
+# Rotas
+Para ajudar nas rotas nomeadas e que trabalha bem com o [Provider] foi utilizado o [GoRouter] para fazer o gerênciamento das rotas do sistema.
 
-A few resources to get you started if this is your first Flutter project:
+# Gerênciamento de Estado
+Para monitorar nosso estado atual do sistema foi utilizado o [Bloc] jutamente com o [Cubit] para deixa menos verboso e sem a utilização de classes para representar nosso [Estado] atual, que por sua vez é utilizado uma varial um [Enum] para facilitar tanto o entendimento quanto a quantidade de código.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# API
+Para fazer requisições e recuperar os dados em [Json] foi utilizado o [Dio].
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# OBS
+Para ilustrar a figura dos carros na lista foi utilizado uma imagem única para representação, pois no [Json] recebido não trouxe essa informação. Criando um simples Icon no [Figma] para Icon Launcher da aplicação e para um breve rascunho da aparência do [Aplicativo]

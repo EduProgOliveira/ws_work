@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
-import 'package:ws_work/src/features/car/domain/entities/car_entity.dart';
-import 'package:ws_work/src/features/car/domain/usecases/get_list_cars.dart';
-import 'package:ws_work/src/features/car/domain/usecases/logout.dart';
-import 'package:ws_work/src/features/car/domain/usecases/save_car.dart';
+import '../../domain/entities/car_entity.dart';
+import '../../domain/usecases/get_list_cars.dart';
+import '../../domain/usecases/logout.dart';
+import '../../domain/usecases/save_car.dart';
 
 part 'car_state.dart';
 

@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  flutter_launcher_icons: "^0.11.0"
   go_router: ^6.0.1
   provider: ^6.0.5
   bloc: ^8.1.0
@@ -33,3 +34,9 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon_launcher.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21

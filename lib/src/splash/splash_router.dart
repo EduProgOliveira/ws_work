@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:ws_work/src/core/database/db.dart';
-import 'package:ws_work/src/features/user/data/datasources/user_local_data_source.dart';
-import 'package:ws_work/src/splash/cubit/splash_cubit.dart';
-import 'package:ws_work/src/splash/splash_page.dart';
+
+import '../core/database/db.dart';
+import '../features/user/data/datasources/user_local_data_source.dart';
+import 'cubit/splash_cubit.dart';
+import 'splash_page.dart';
 
 class SplashRouter {
   SplashRouter._();

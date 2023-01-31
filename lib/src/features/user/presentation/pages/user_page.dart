@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:ws_work/src/features/car/presentation/car_router.dart';
-import 'package:ws_work/src/features/user/presentation/cubit/user_cubit.dart';
-import 'package:ws_work/src/features/user/presentation/cubit/user_state.dart';
-import 'package:ws_work/src/features/user/presentation/widgets/user_body_custom.dart';
+import '../../../car/presentation/car_router.dart';
+import '../cubit/user_cubit.dart';
+import '../cubit/user_state.dart';
+import '../widgets/user_body_custom.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({super.key});

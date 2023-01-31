@@ -1,4 +1,4 @@
-import 'package:ws_work/src/core/models/user_model.dart';
+import '../../../../core/models/user_model.dart';
 
 abstract class IUserRepository {
   Future<UserModel?>? getUser();

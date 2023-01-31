@@ -1,18 +1,17 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:ws_work/src/core/database/db.dart';
-import 'package:ws_work/src/core/usecases/i_usecase.dart';
-import 'package:ws_work/src/features/car/data/datasources/car_local_data_source.dart';
-import 'package:ws_work/src/features/car/data/datasources/car_remote_data_source.dart';
-import 'package:ws_work/src/features/car/data/repositories/car_repository.dart';
-import 'package:ws_work/src/features/car/domain/entities/car_entity.dart';
-import 'package:ws_work/src/features/car/domain/repositories/i_car_repository.dart';
-import 'package:ws_work/src/features/car/domain/usecases/get_list_cars.dart';
-import 'package:ws_work/src/features/car/domain/usecases/logout.dart';
-import 'package:ws_work/src/features/car/domain/usecases/save_car.dart';
-import 'package:ws_work/src/features/car/presentation/cubit/car_cubit.dart';
-import 'package:ws_work/src/features/car/presentation/pages/car_page_list.dart';
+import '../../../core/database/db.dart';
+import '../../../core/utils/publish_lead.dart';
+import '../data/datasources/car_local_data_source.dart';
+import '../data/datasources/car_remote_data_source.dart';
+import '../data/repositories/car_repository.dart';
+import '../domain/repositories/i_car_repository.dart';
+import '../domain/usecases/get_list_cars.dart';
+import '../domain/usecases/logout.dart';
+import '../domain/usecases/save_car.dart';
+import 'cubit/car_cubit.dart';
+import 'pages/car_page_list.dart';
 
 class CarRouter {
   CarRouter._();
@@ -21,6 +20,13 @@ class CarRouter {
 
   static Widget get page => MultiProvider(
         providers: [
+          Provider(
+            create: (context) => PublishLead(dio: Dio(), db: DB.instance),
+            lazy: false,
+            dispose: (context, value) {
+              value.stopTime();
+            },
+          ),
           Provider<ICarRemoteDataSource>(
             create: (context) => CarRemoteDataSource(dio: Dio()),
           ),
